@@ -34,7 +34,7 @@ func NewDB() *gorm.DB {
 	return db
 }
 
-// DBをクローズする関する
+// DBをクローズする関数
 func CloseDB(db *gorm.DB) {
 	// DBをクローズする
 	sqlDB, _ := db.DB()
